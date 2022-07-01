@@ -16,7 +16,7 @@ else{
 
 node("terraform"){
     stage("Pull Repo"){
-        git 'https://github.com/ikambarov/terraform-vpc.git'
+        git 'git@github.com:nadmittcu/terraform-vpc.git'
     }
 
     withEnv(["AWS_REGION=${ region }"]) {
